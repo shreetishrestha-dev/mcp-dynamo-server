@@ -60,22 +60,16 @@ pipx install mcp-dynamo
 ### Option D — Docker
 
 ```bash
-git clone https://github.com/shreetishrestha/mcp-dynamo.git
-cd mcp-dynamo
+git clone https://github.com/shreetishrestha-dev/mcp-dynamo-server.git
+cd mcp-dynamo-server
 docker build -t mcp-dynamo .
-```
-
-Or pull directly once published to a registry:
-
-```bash
-docker pull shreetishrestha/mcp-dynamo:latest
 ```
 
 ### Option E — development install (editable)
 
 ```bash
-git clone https://github.com/shreetishrestha/mcp-dynamo.git
-cd mcp-dynamo
+git clone https://github.com/shreetishrestha-dev/mcp-dynamo-server.git
+cd mcp-dynamo-server
 python3.13 -m venv .venv
 source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -e ".[dev]"
@@ -384,8 +378,8 @@ All read tools accept `format: "json" | "table"` (default `json`).
 ## Development
 
 ```bash
-git clone https://github.com/shreetishrestha/mcp-dynamo.git
-cd mcp-dynamo
+git clone https://github.com/shreetishrestha-dev/mcp-dynamo-server.git
+cd mcp-dynamo-server
 python3.13 -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"
