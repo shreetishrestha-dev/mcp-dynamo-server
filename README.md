@@ -60,6 +60,12 @@ pipx install mcp-dynamo
 ### Option D — Docker
 
 ```bash
+docker pull shreetishrestha977/mcp-dynamo:latest
+```
+
+Or build from source:
+
+```bash
 git clone https://github.com/shreetishrestha-dev/mcp-dynamo-server.git
 cd mcp-dynamo-server
 docker build -t mcp-dynamo .
@@ -254,7 +260,7 @@ Replace the `uvx` command with `docker run`:
         "-e", "AWS_ACCESS_KEY_ID",
         "-e", "AWS_SECRET_ACCESS_KEY",
         "-e", "AWS_REGION",
-        "mcp-dynamo:latest"
+        "shreetishrestha977/mcp-dynamo:latest"
       ],
       "env": {
         "AWS_ACCESS_KEY_ID": "AKIA...",
